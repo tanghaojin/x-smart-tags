@@ -1,6 +1,12 @@
 # X Smart Tags
 
+**简体中文** | [English](README_EN.md)
+
 使用 [TypeSafe AI](https://typesafe.ai/) 自动识别 X 帖子主题，并通过专注模式折叠与当前关注方向无关的内容。
+
+![X Smart Tags 在 X 信息流中显示“社媒增长”标签](docs/images/x-smart-tags-feed.png)
+
+> 标签显示在帖子的右上角；截图中突出展示了“社媒增长”和“观点分析”标签。
 
 ## 功能
 
