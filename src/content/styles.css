@@ -1,0 +1,17 @@
+article[data-typesafe-tags="true"] { position: relative !important; }
+.tsai-root { align-items: center; display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; max-width: min(52%, 330px); position: absolute; right: 48px; top: 9px; z-index: 8; }
+.tsai-pill { appearance: none; backdrop-filter: blur(8px); border: 1px solid color-mix(in srgb, currentColor 28%, transparent); border-radius: 999px; cursor: pointer; font: 600 11px/1.15 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .01em; min-height: 22px; padding: 3px 8px; transition: filter 140ms ease, transform 140ms ease; white-space: nowrap; }
+.tsai-pill:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.tsai-violet { background: #ede9fe; color: #6d28d9; }.tsai-blue { background: #dbeafe; color: #1d4ed8; }.tsai-cyan { background: #cffafe; color: #0e7490; }.tsai-indigo { background: #e0e7ff; color: #4338ca; }.tsai-sky { background: #e0f2fe; color: #0369a1; }.tsai-green { background: #dcfce7; color: #15803d; }.tsai-amber { background: #fef3c7; color: #a16207; }.tsai-orange { background: #ffedd5; color: #c2410c; }.tsai-lime { background: #ecfccb; color: #4d7c0f; }.tsai-pink { background: #fce7f3; color: #be185d; }
+.tsai-more, .tsai-uncertain { background: rgba(113, 118, 123, .12); color: rgb(83, 100, 113); }
+.tsai-loading { background: rgba(29, 155, 240, .1); color: rgb(29, 155, 240); cursor: default; }
+.tsai-error { background: rgba(244, 33, 46, .1); color: rgb(244, 33, 46); }
+.tsai-focus-hidden { background: rgba(124, 58, 237, .11); color: #6d28d9; }
+article.tsai-focus-collapsed { height: 48px !important; min-height: 48px !important; overflow: hidden !important; opacity: .72; }
+article.tsai-focus-collapsed::after { background: linear-gradient(90deg, rgba(124,58,237,.05), transparent 60%); content: ""; inset: 0; pointer-events: none; position: absolute; }
+.tsai-popover { background: rgba(255, 255, 255, .97); border: 1px solid rgba(15, 23, 42, .12); border-radius: 14px; box-shadow: 0 16px 44px rgba(15, 23, 42, .2); color: #0f172a; display: grid; gap: 2px; min-width: 190px; padding: 10px; position: absolute; right: 0; top: 30px; z-index: 20; }
+.tsai-popover strong { font: 650 12px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 3px 7px 7px; }
+.tsai-option { align-items: center; border-radius: 8px; cursor: pointer; display: flex; font: 500 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; gap: 8px; padding: 6px 7px; }
+.tsai-option:hover { background: #f1f5f9; }.tsai-option input { accent-color: #6d28d9; height: 15px; width: 15px; }
+@media (prefers-color-scheme: dark) { .tsai-popover { background: rgba(15, 23, 42, .98); border-color: rgba(255, 255, 255, .14); color: #f8fafc; }.tsai-option:hover { background: #1e293b; }.tsai-more, .tsai-uncertain { color: rgb(139, 152, 165); } }
+@media (max-width: 520px) { .tsai-root { max-width: 44%; }.tsai-pill { padding-inline: 6px; } }

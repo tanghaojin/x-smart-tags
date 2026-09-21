@@ -1,0 +1,26 @@
+{
+  "name": "x-smart-tags",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Chrome extension that uses TypeSafe AI to label and focus X posts.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanghaojin/x-smart-tags.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --pool=forks --maxWorkers=1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@types/chrome": "^0.3.0",
+    "happy-dom": "^20.14.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}

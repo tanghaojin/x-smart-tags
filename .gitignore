@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+.agents/
+.exploration/
+examples/
+api-key.txt
+*.zip
+.env
+.env.*
+EXPLORATION.md
+skills-lock.json
